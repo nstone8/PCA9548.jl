@@ -1,0 +1,12 @@
+name = "PCA9548"
+uuid = "bbb2e940-43d1-47c3-b77c-c9243c20d82a"
+authors = ["Nick Stone <nicholasestone@proton.me>"]
+version = "0.1.0"
+
+[deps]
+Conda = "8f4d0f93-b110-5947-807f-2305c1781a2d"
+PyCall = "438e738f-606a-5dbb-bf0a-cddfbfd45ab0"
+
+[compat]
+Conda = "1.10.2"
+PyCall = "1.96.4"

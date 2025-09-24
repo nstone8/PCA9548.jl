@@ -19,7 +19,9 @@ struct MultiI2C
     end
 end
 
-Base.getindex(m::MultiI2C,i::Int) = m.multi[i]
+#PyCall is cute and tries to shift the index, but we want to index ports from 0 in julia.
+#Therefore, the weird i+1
+Base.getindex(m::MultiI2C,i::Int) = m.multi[i+1]
 Base.firstindex(::MultiI2C) = 0
 Base.lastindex(::MultiI2C) = 7
 
